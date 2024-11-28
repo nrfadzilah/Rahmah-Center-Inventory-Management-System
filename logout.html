@@ -1,0 +1,58 @@
+<?php
+// Start the session
+session_start();
+
+// Destroy all session data
+session_destroy();
+
+// Display a logout confirmation message and redirect after 3 seconds
+echo '<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logged Out - Rahmah Center</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+        .message-box {
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #020b3d;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-box">
+        <h2>You have been logged out</h2>
+        <p>Thank you for visiting the Rahmah Center Admin Page.</p>
+        <p>Redirecting you to the login page...</p>
+    </div>
+    <script>
+        // Redirect after 3 seconds
+        setTimeout(function() {
+            window.location.href = "adminlogin.php";
+        }, 3000);
+    </script>
+</body>
+</html>

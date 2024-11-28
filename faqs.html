@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rahmah Center - FAQs</title>
+	<link rel="icon" href="img/Fevicon.png" type="image/png">
+  <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="vendors/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="vendors/nice-select/nice-select.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .faq-section {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .faq-header {
+      font-size: 1.5em;
+      margin-bottom: 1em;
+      color: #333;
+    }
+    .faq-item {
+      margin-bottom: 1em;
+    }
+    .faq-question {
+      font-weight: bold;
+      cursor: pointer;
+      color: #007bff;
+      margin: 0;
+      display: flex;
+      align-items: center;
+    }
+    .faq-question:after {
+      content: "+";
+      margin-left: auto;
+      font-size: 1.2em;
+    }
+    .faq-answer {
+      display: none;
+      padding: 10px;
+      border-left: 2px solid #007bff;
+      background-color: #f1f9ff;
+      margin-top: 10px;
+      color: #333;
+    }
+    .active .faq-answer {
+      display: block;
+    }
+    .active .faq-question:after {
+      content: "-";
+    }
+  </style>
+</head>
+
+<body>
+ <!--================ Start Header Menu Area =================-->
+ <header class="header_area">
+  <div class="main_menu">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand logo_h" href="index.html"><img src="rahmah.jpeg" width= "130px" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+          <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li> 
+            <li class="nav-item submenu dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">Items</a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link" href="category1.php">Preserved Foods</a></li>
+                <li class="nav-item"><a class="nav-link" href="category2.php">Perishable Foods</a></li>
+                <li class="nav-item"><a class="nav-link" href="category3.php">Hygiene Products</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="feedback.php">Feedback</a></li>
+            
+            <li class="nav-item submenu dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">User</a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
+                <li class="nav-item"><a class="nav-link" href="manual.html">User Manual</a></li>
+              </ul>
+            </li>
+            <li class="nav-item submenu dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">Admin</a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link" href="adminlogin.php">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="adminregister.php">Register</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div>
+            <a class="navbar-brand logo_h" href="index.html"><img src="fcom_logo.png" width= "160" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          </button>
+          </div>
+        <div>
+          <a class="navbar-brand logo_h" href="index.html"><img src="uptm_logo.png" width= "150" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        </button>
+        </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<!--================ End Header Menu Area =================-->
+
+  <main class="site-main">
+
+	<!-- ================ start banner area ================= -->	
+	<section class="blog-banner-area" id="category">
+		<div class="container h-100">
+			<div class="blog-banner">
+				<div class="text-center">
+          <h1>Frequently Asked Questions</h1>
+				</div>
+			</div>
+    </div>
+	</section>
+	<!-- ================ end banner area ================= -->
+
+     <!--================ Hero banner start =================-->
+     <div class="faq-section">
+      <h1 class="faq-header">Rahmah Center FAQ</h1>
+      
+      <div class="faq-item">
+        <p class="faq-question">What is the Rahmah Center Inventory Management System?</p>
+        <div class="faq-answer">
+          <p>The Rahmah Center Inventory Management System is a web application that helps manage the stock of basic necessities available at the Rahmah Center. It allows users to check item availability and allows admins to track, manage, and restock inventory efficiently.</p>
+        </div>
+      </div>
+    
+      <div class="faq-item">
+        <p class="faq-question">Who can use the inventory management system?</p>
+        <div class="faq-answer">
+          <p>The system is designed for both students and administrators. Students can view available items and track items they take, while administrators have access to inventory management tools, such as adding or updating stock levels and reviewing item usage.</p>
+        </div>
+      </div>
+    
+      <div class="faq-item">
+        <p class="faq-question">Do I need an account to use the system?</p>
+        <div class="faq-answer">
+          <p>Only administrators need an account to log in and manage inventory. Students can access certain parts of the system without a login to check item availability and track what item they take.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">How can I check the availability of items in stock?</p>
+        <div class="faq-answer">
+          <p>Students can view available items directly from the main inventory page without logging in. This page shows the current stock levels of essential items.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">How do admins restock items?</p>
+        <div class="faq-answer">
+          <p>Admins can access the admin dashboard after logging in. From there, they can view current stock levels, add new items, or update quantities to restock the items as needed.</p>
+        </div>
+      </div>
+    
+      <div class="faq-item">
+        <p class="faq-question">How is the data on item usage tracked?</p>
+        <div class="faq-answer">
+          <p>The system will generate a receipt for the items that a student takes. Admins will then deduct the corresponding quantities from the stock based on the items listed in the receipt.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">Who can I contact if I have additional questions or need support?</p>
+        <div class="faq-answer">
+          <p>If you have further questions, please reach out to the Rahmah Center support team or the designated administrator. They can help with any inquiries related to the system.</p>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      document.querySelectorAll('.faq-question').forEach(item => {
+        item.addEventListener('click', () => {
+          const faqItem = item.parentNode;
+          faqItem.classList.toggle('active');
+        });
+      });
+    </script>
+    <!--================ Hero banner start =================-->
+  </main>
+
+  <!--================ Start footer Area  =================-->	
+	<footer>
+		<div class="footer-area">
+				<div class="row section_gap">
+					<div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
+						<div class="single-footer-widget tp_widgets">
+							<h4 class="footer_title">Quick Links</h4>
+							<ul class="list">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="category1.php">Items</a></li>
+                                <li><a href="about.html">About Us</a></li>
+								<li><a href="feedback.php">Feedback</a></li>
+                                <li><a href="faqs.html">FAQs</a></li>
+                                <li><a href="manual.html">User Manual</a></li>
+								<li><a href="adminlogin.php">Admin</a></li>
+							</ul>
+						</div>
+					</div>
+          
+					<div class="offset-lg-1 col-lg-4 col-md-6 col-sm-6">
+						<div class="single-footer-widget tp_widgets">
+							<h4 class="footer_title">Contact Us</h4>
+							<div class="ml-40">
+								<p class="sm-head">
+									<span class="fa fa-location-arrow"></span>
+									Head Office
+								</p>
+								<p>UNIVERSITI POLY-TECH MALAYSIA,<br>
+                  Jalan 6/91, Taman Shamelin Perkasa,<br>
+                  56100 Cheras, Kuala Lumpur</p>
+	
+								<p class="sm-head">
+									<span class="fa fa-phone"></span>
+									Phone Number
+								</p>
+								<p>
+									General Line: +603 9206 9700<br>
+									Admin: +601 7504 7030
+								</p>
+	
+								<p class="sm-head">
+									<span class="fa fa-envelope"></span>
+									Email
+								</p>
+								<p>
+									rahmahcenter@uptm.edu.my
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row d-flex">
+					<p class="col-lg-12 footer-text text-center">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | RahmahCenter<i class="fa fa-heart" aria-hidden="true"></i> by <a href="#" target="_blank">nrfdzlh</a>
+</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--================ End footer Area  =================-->
+
+
+  <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+  <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="vendors/skrollr.min.js"></script>
+  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="vendors/nice-select/jquery.nice-select.min.js"></script>
+  <script src="vendors/jquery.ajaxchimp.min.js"></script>
+  <script src="vendors/mail-script.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
